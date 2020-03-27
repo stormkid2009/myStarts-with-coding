@@ -9,6 +9,9 @@
 }
 
 #image{
-    max-width: 100%;
-    height: auto;
+    width: auto;
+    height:auto;
+}
+#img-div{
+    object-fit: fill;
 }
