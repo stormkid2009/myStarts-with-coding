@@ -1,12 +1,18 @@
+body{
+    background-color:lightgray;
+    font-family: verdana ,serif;
+
+}
 .container{
     height: 1000px;
     width: 100%;
     font-size: 2em;
-    color:red;
-    background-color: #fff;
+    color:#000;
+    background-color:lightgray;
+    text-align:center;
     display:grid;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: 30px 1fr 30px;
+    grid-template-rows: 50px 1fr 50px;
     grid-gap: 1rem;
     grid-template-areas: 
     "h h h h h h"
@@ -16,19 +22,23 @@
 }
 .header{
     grid-area:h;
-    background-color: lightskyblue;
+    background-color: lightslategray;
 }
 .side-bar{
     grid-area:sb;
-    background-color: lightskyblue;
+    background-color: lightslategray;
 }
 .content{
     grid-area:c;
-    background-color: lightskyblue;
+    background-color: lightslategray;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
+
 .footer{
     grid-area:f;
-    background-color: lightskyblue;
+    background-color: lightslategray;
 }
 @media (width:400px){
     .container{
@@ -41,4 +51,76 @@
         'f'
         ;
     }
+}
+#img-1{
+    width: 320px;
+    height:300px;
+    padding: 0;
+    margin: 10px;
+}
+#img-2{
+    width: 320px;
+    height:300px;
+    padding: 0;
+    margin: 10px;
+}
+#img-3{
+    width: 320px;
+    height:300px;
+    padding: 0;
+    margin: 10px;
+}
+#img-4{
+    width: 320px;
+    height:300px;
+    padding: 0;
+    margin: 10px;
+}
+#img-5{
+    width: 320px;
+    height:300px;
+    padding: 0;
+    margin: 10px;
+}
+#img-6{
+    width: 320px;
+    height:300px;
+    padding: 0;
+    margin: 10px;
+}
+#img-7{
+    width: 320px;
+    height:300px;
+    padding: 0;
+    margin: 10px;
+}
+#img-8{
+    width: 320px;
+    height:300px;
+    padding: 0;
+    margin: 10px;
+}
+#img-9{
+    width: 320px;
+    height:300px;
+    padding: 0;
+    margin: 10px;
+}
+#img-10{
+    width: 320px;
+    height:300px;
+    padding: 0;
+    margin: 10px;
+}
+#img-11{
+    width: 320px;
+    height:300px;
+    padding: 0;
+    margin: 10px;
+}
+#img-12{
+    width: 320px;
+    height:300px;
+    padding: 0;
+    margin: 10px;
 }
