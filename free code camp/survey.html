@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="survey.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 id="title">our survey title gonna be here!!</h1>
+            <p id="description">thanks for helping us!!!</p>
+        </div>
+        <form action="" id="form-survey">
+            <label for="name" id="name-label">Name</label>
+            <input type="text"placeholder="enter ur name plz" id="name"><br>
+            <!-- /*email must validate as email format.*/ -->
+            <label for="email" id="email-label">Email</label>
+            <input type="email"  placeholder="enter valid email plz" id="email" required>
+            <br>
+            <label for="number" id="number-label">Number</label>
+            <input type="number" id="number" placeholder="enter number between 18 and 60 plz" required
+            min="18" max="60">
+            <br>
+            <!-- we gonna make dropdown menu with element Select -->
+            <div id="drop-container">
+                    <p>Choose an item:</p>   
+                <select id="dropdown">
+                    <option value="hot">hot..................  </option>
+                    <option value="cold">cold................. </option>
+                    <option value="good">good................. </option>
+                </select>
+            
+            </div>
+            <!-- radio or checkbox should have the same name so we can treat them as a group -->
+            <div id="radio-container">choose your favourite transport :<br>
+                <input type="radio" name="option-radio" value="car">
+                <label for="car">car</label><br>
+                <input type="radio" name="option-radio" value="bus">
+                <label for="bus">bus</label><br>
+                <input type="radio" name="option-radio" value="train">
+                <label for="train">train</label><br>
+                <input type="radio" name="option-radio" value="bike"checked>
+                <label for="bike">bike</label><br>
+            </div>
+            <div id="check-container">choose your favourite color :<br>
+                <input type="checkbox" name="option-check" value="red">
+                <label for="red">red</label><br>
+                <input type="checkbox" name="option-check" value="yellow">
+                <label for="yellow">yellow</label><br>
+                <input type="checkbox" name="option-check" value="orange">
+                <label for="orange">orange</label><br>
+                <input type="checkbox" name="option-check" value="green">
+                <label for="green">green</label><br>
+            </div>
+            <div id="extra-text">
+               <p>drop your comments in the text-ara below!!</p> 
+                <textarea name="comments" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div id="submit-container">
+                <button id="submit-form" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
