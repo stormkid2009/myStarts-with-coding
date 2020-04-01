@@ -1,0 +1,28 @@
+body{
+    background-image: url("/images/1.jpg");
+    font-family:'Calibri', serif;
+}
+
+
+.container{
+    width:100%;
+    height:100%;
+    background-color:transparent;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+#form-div{
+    background-color:lightgray;
+    width:30%;
+    padding:20px;
+    border: lightgray 3px outset;
+}
+.header{
+    background-color:lightgray;
+    width:30%;
+    padding:20px;
+    border: lightgray 3px outset;
+    font-family:"Garamond", serif;
+
+}

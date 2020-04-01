@@ -9,9 +9,10 @@
 <body>
     <div class="container">
         <div class="header">
-            <h1 id="title">our survey title gonna be here!!</h1>
-            <p id="description">thanks for helping us!!!</p>
+            <h1 id="title"><i>Lands of mystery and magic</i></h1>
         </div>
+        <div id="form-div">
+            <h4 id="description">Be ready to fly with us to .....</h4>
         <form action="" id="form-survey">
             <label for="name" id="name-label">Name</label>
             <input type="text"placeholder="enter ur name plz" id="name"><br>
@@ -27,22 +28,22 @@
             <div id="drop-container">
                     <p>Choose an item:</p>   
                 <select id="dropdown">
-                    <option value="hot">hot..................  </option>
-                    <option value="cold">cold................. </option>
-                    <option value="good">good................. </option>
+                    <option value="male">male..................  </option>
+                    <option value="female">female................. </option>
+                    <option value="Bisexual">Bisexual................. </option>
                 </select>
             
             </div>
             <!-- radio or checkbox should have the same name so we can treat them as a group -->
-            <div id="radio-container">choose your favourite transport :<br>
-                <input type="radio" name="option-radio" value="car">
-                <label for="car">car</label><br>
-                <input type="radio" name="option-radio" value="bus">
-                <label for="bus">bus</label><br>
-                <input type="radio" name="option-radio" value="train">
-                <label for="train">train</label><br>
-                <input type="radio" name="option-radio" value="bike"checked>
-                <label for="bike">bike</label><br>
+            <div id="radio-container">What is this location? :<br>
+                <input type="radio" name="option-radio" value="rome">
+                <label for="rome">Rome</label><br>
+                <input type="radio" name="option-radio" value="luxour">
+                <label for="luxour">Luxour</label><br>
+                <input type="radio" name="option-radio" value="athens">
+                <label for="athens">Athens</label><br>
+                <input type="radio" name="option-radio" value="paris"checked>
+                <label for="paris">Paris</label><br>
             </div>
             <div id="check-container">choose your favourite color :<br>
                 <input type="checkbox" name="option-check" value="red">
@@ -62,6 +63,7 @@
                 <button id="submit-form" type="submit">Submit</button>
             </div>
         </form>
+    </div>
     </div>
 </body>
 </html>
