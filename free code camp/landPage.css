@@ -1,0 +1,20 @@
+#main{
+    font-family:  sans-serif;
+    font-size: 15px;
+    background-color: #bbb;
+    display:flex;
+}
+#header{
+    font-family: serif;
+}
+#header-img{
+    width:100px;
+    height:100px;
+}
+#nav-bar{
+    width:100%;
+    height: auto;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
