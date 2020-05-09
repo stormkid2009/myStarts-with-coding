@@ -14,14 +14,14 @@
         </div>
         <nav id="nav-bar">
           <ul>
-            <li><a href="" class="nav-link">First product</a></li>
-            <li><a href="" class="nav-link">Second product</a></li>
-            <li><a href="" class="nav-link">Third product</a></li>
+            <li><a href="#product1" class="nav-link">First product</a></li>
+            <li><a href="#product2" class="nav-link">Second product</a></li>
+            <li><a href="#product3" class="nav-link">Third product</a></li>
           </ul>
         </nav>
       </header>
       <div id="container">
-        <section>
+        <div id="video-frame">
           <iframe
             width="560"
             height="315"
@@ -30,9 +30,10 @@
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-        </section>
-        <section>
+        </div>
+        <div>
           <form action="" id="form">
+            <h3>join our mail list !!</h3>
             <input
               type="email"
               name=""
@@ -47,12 +48,14 @@
               formaction="https://www.freecodecamp.com/email-submit"
             />
           </form>
-        </section>
-        <section>
-          <div>first product <img src="first.jpeg" alt="" /></div>
-          <div>second product <img src="second.jpeg" alt="" /></div>
-          <div>third product <img src="third.jpeg" alt="" /></div>
-        </section>
+        </div>
+        <div class="products">
+          <div id="product1">first product <img src="first.jpeg" alt="" /></div>
+          <div id="product2">
+            second product <img src="second.jpeg" alt="" />
+          </div>
+          <div id="product3">third product <img src="third.jpeg" alt="" /></div>
+        </div>
       </div>
     </div>
   </body>
