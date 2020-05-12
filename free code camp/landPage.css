@@ -5,13 +5,12 @@
   background-color: #bbb;
   display: flex;
 }
-div {
-  display: block;
-}
+
 #header {
   position: fixed;
   top: 0;
   min-height: 75px;
+  opacity: 1;
   padding: 0px 20px;
   font-family: serif;
   display: flex;
@@ -40,7 +39,28 @@ li{
 }
 #container {
   padding-top: 7em;
+  width: 100%;
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 100px 1fr 1fr 1fr ;
+  grid-template-rows: auto;
+  grid-template-areas: 
+  ". iframe . form"
+  ". details details ."
+  ". products products products";
   
+}
+#video-frame{
+  grid-area: iframe;
+}
+#myForm{
+  grid-area: form;
+}
+.products{
+  grid-area: products;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+}
+#details{
+  grid-area: details;
 }
