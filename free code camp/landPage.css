@@ -15,7 +15,7 @@ div {
   padding: 0px 20px;
   font-family: serif;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 #header-img {
@@ -25,10 +25,13 @@ div {
 #nav-bar {
   width: 100%;
   height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+}
+ul{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+li{
+  list-style-type: none;
 }
 .nav-link {
   width: 100px;
@@ -37,8 +40,7 @@ div {
 }
 #container {
   padding-top: 7em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  
 }
