@@ -9,8 +9,9 @@
 #header {
   position: fixed;
   top: 0;
+  width:100%;
   min-height: 75px;
-  opacity: 1;
+  background-color: #fff;;
   padding: 0px 20px;
   font-family: serif;
   display: flex;
