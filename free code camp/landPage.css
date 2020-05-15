@@ -65,3 +65,14 @@ li{
 #details{
   grid-area: details;
 }
+.product-img{
+  width: 300px;
+  height: 300px;
+}
+.shop-now{
+  width:100%;
+
+}
+#product1{margin: 10px;}
+#product2{margin: 10px;}
+#product3{margin: 10px;}
