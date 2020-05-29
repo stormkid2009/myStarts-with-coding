@@ -7,7 +7,7 @@ let car = { model: "ferrari", power: "2400cc", color: "red" };
 //     }
 // }
 // transport();
-const list = [3, 4, 6,7,8,9];
+const list = [3, 4, 6, 7, 8, 9];
 let [x, y, z,...args] = list;
 //args here is the rest of arguments which gonna store in array
 //console.log(x);
