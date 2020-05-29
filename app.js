@@ -7,6 +7,18 @@ const newObject={...myObject};
 const otherObject=(x,y)=>{x,y};
 otherObject['x']=25;
 otherObject['y']=55;
-console.log(otherObject.x,otherObject.y);
+//console.log(otherObject.x,otherObject.y);
 //ctrl+k+c  to comment block of code
 //ctrl+k+u  to uncomment block of code
+const mainFunc=function(x){
+    const subFunc=function(y=2){
+        let sum=x*y;
+        return sum;
+    }
+    return subFunc(5);
+    //ok if we tried to break the scope of inner function ===>
+    //return sum;
+    //we have got error as the mainFunc can not see the params of subFunc
+    //but subFunc can see the 'x' the param of mainFunc.
+}
+console.log(mainFunc(4));
