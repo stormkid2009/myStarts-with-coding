@@ -1,3 +1,5 @@
+//Note:loops will be executed faster than recursive function.
+
 function helpMe(myString,count){
     if (count==0){
         return 'finished';
@@ -12,5 +14,15 @@ function helpMe(myString,count){
          */
     }
 }
-console.log(helpMe(`plz I need help 
-`,5));
+/*console.log(helpMe(`plz I need help 
+`,5));*/
+function askHelp(count) {
+    //conditional (ternary) operator => condition ? exprIfTrue : exprIfFalse
+    return (count === 0) ?  (`no one need help!!`):
+     (`${count} need help 
+        `+ askHelp(count - 1));
+}
+
+console.log(askHelp(6));
+
+//Some problems really are easier to solve with recursion than with loops.
