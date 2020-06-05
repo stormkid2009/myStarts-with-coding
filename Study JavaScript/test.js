@@ -15,9 +15,13 @@ toDo.splice(0,1);
 //console.log(toDo);
 
 //console.log(toDo.indexOf('watch a movie'));
-let list=[0, 1, 2, 3, 4];
-let newArr=list.slice(-1);
-/*slice return a new array with certain elements
+let list=['banana', 'orange', 'apple', 'grapes', 'berry','coconut'];
+let newArr=list.slice(1,3);
+/*slice does not change the array but return a new array with certain elements
 slice syntax => arr.slice(index to start "it is inclusive in the new array",index to end "exclusive 
 in the new array")*/
-console.log(newArr);
+//console.log(newArr);
+//let myArr=list.concat(newArr);
+//concat does not change original arrays but it merges them in new array
+let myArr=list.concat('string here will treated as one element array');
+console.log(myArr);
