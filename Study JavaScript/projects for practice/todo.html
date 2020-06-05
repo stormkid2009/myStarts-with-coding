@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>to do list with vanilla javascript</h1>
+    <ul id="list"></ul>
+    <script>
+      let toDoList = ["walk the dog", "go to the gym", "watch a movie"];
+      let list = document.getElementById("list");
+      for (let item = 0; item < 3; item++) {
+          //creating unorder list li
+        let el = document.createElement("li");
+        //appending the new element to the dom
+        list.appendChild(el);
+        //give the item unique id the same we generate with the for loop
+        el.setAttribute("id", item);
+        //change value of li inner html with the array item
+        document.getElementById(item).innerHTML = toDoList[item];
+      }
+    </script>
+  </body>
+</html>
