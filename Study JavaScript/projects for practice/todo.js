@@ -1,29 +1,30 @@
-let toDoList = ["walk the dog", "go to the gym", "watch a movie"];
-//we will update our list throw this function
-function updateArr(item) {
-    toDoList.push(item);
+//first we have to declare our variables
+let toDoList = [];
+const userInput = document.getElementById("userInput");
+const addTask = document.getElementById('addTask');
+const tasksList = document.getElementById("tasksList");
+//we will update our list throw the function in this event
 
-}
-//when user input a task it will be added to our toDoList array
-const userTask = document.getElementById("userInput");
-userTask.addEventListener("change", (e) => {
-    let addNewTask = e.target.value;
-    updateArr(addNewTask);
+userInput.addEventListener("change", (e) => {
+    toDoList.unshift(userInput.value);
+});
+
+addTask.addEventListener('click', (e)=>{
+    let el = document.createElement("li");
+    tasksList.appendChild(el);
+    el.innerHTML = userInput.value;
+    userInput.value="";
+    userInput.focus();
 
 });
-console.log(toDoList);
 
 
 
+        
+        
+        
+    
+    
 
-    //   let list = document.getElementById("list");
-    //   for (let item = 0; item < 4; item++) {
-    //     //creating unorder list li
-    //     let el = document.createElement("li");
-    //     //appending the new element to the dom
-    //     list.appendChild(el);
-    //     //give the item unique id the same we generate with the for loop
-    //     el.setAttribute("id", item);
-    //     //change value of li inner html with the array item
-    //     document.getElementById(item).textContent = toDoList[item];
-    //   }
+
+
