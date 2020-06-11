@@ -17,7 +17,8 @@ function arrayToList(arr) {
 //linked list to array
 function listToArray(list) {
     let array = [];
-    for (let node = list; node; node = node.rest)
+    for (let node = list; node; node = node.rest)//we can replace
+    //node with node!=null
         array.push(node.value);
     return array;
 
