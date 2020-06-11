@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <script src="./record.json"></script>
     <script>
-        const show="This is my header";
-        const myHeader=`<h1 id="test">${show}</h1>
-        <button type="button"
-        onclick="document.getElementById('test').style.color = 'blue'">
-        Click Me!</button>`;
-        document.body.innerHTML=myHeader;
-        document.getElementById("test").style.color="red";
+      // const show="This is my header";
+      // const myHeader=`<h1 id="test">${show}</h1>
+      // <button type="button"
+      // onclick="document.getElementById('test').style.color = 'blue'">
+      // Click Me!</button>`;
+      // document.body.innerHTML=myHeader;
+      // document.getElementById("test").style.color="red";
+      const myPara = document.createElement("p");
+      let record="./record.json";
+      let myData = JSON.parse(record);
+      myPara.textContent = myData[0].name;
+      document.body.appendChild(myPara);
     </script>
-
-</body>
+  </body>
 </html>
