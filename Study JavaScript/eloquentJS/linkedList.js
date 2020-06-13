@@ -30,3 +30,22 @@ function listToArray(list) {
   //array.push(node.value) ==> array=[1,2]
   //we gonna jump into internal object with node.rest
   //array.push(node.value) ==> array=[1,2,3]
+
+  /*helper function prepend , which
+takes an element and a list and creates a new list that adds the element to the
+front of the input list */
+
+function prepend(value,list){
+    return {value,rest:list};
+}
+
+/*function takes a list and a number and returns
+the element at the given position in the list (with zero referring to the first
+element) or undefined when there is no such element.
+If you haven’t already, also write a recursive version of nth .*/
+
+function nth(list, n) {
+    if (!list) return undefined;
+    else if (n == 0) return list.value;
+    else return nth(list.rest, n - 1);
+  }
