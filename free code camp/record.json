@@ -1,5 +1,18 @@
 {
-  "May":["html basics","css basics","java script basics"],
-  "June":["ES 6 basics","flex box and grid"],
-  "July":["eloquent java script","data structure"]
+  "May":[
+      "html basics",
+      "css basics",
+      "java script basics"
+  
+],
+  "June":[
+      "ES 6 basics",
+      "flex box and grid"
+  
+],
+  "July":[
+      "eloquent java script",
+      "data structure"
+  
+]
 }

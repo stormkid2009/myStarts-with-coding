@@ -4,22 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    
   </head>
   <body>
-    <script src="./record.json"></script>
+    <div id="root">
+      
+    </div>
+    <button id="text">get text</button>
+    
     <script>
-      // const show="This is my header";
-      // const myHeader=`<h1 id="test">${show}</h1>
-      // <button type="button"
-      // onclick="document.getElementById('test').style.color = 'blue'">
-      // Click Me!</button>`;
-      // document.body.innerHTML=myHeader;
-      // document.getElementById("test").style.color="red";
-      const myPara = document.createElement("p");
-      let record="./record.json";
-      let myData = JSON.parse(record);
-      myPara.textContent = myData[0].name;
-      document.body.appendChild(myPara);
+      document.getElementById('text').addEventListener('click',getText);
+      function getText(){
+        //we fetch our json file
+        fetch("record.json")
+        //we get the first promise with respond as json format
+        .then((res) => res.json())
+        //second promise we store our daya in function parameter
+        .then ((data)=>{
+          //we use back ticks to add some html elements inside avariable
+          let output=`<h2>tasks of may</h2>
+          <ul>
+          <li>first : ${data.May[0]}</li>
+          <li>second : ${data.May[1]}</li>
+          <li>third : ${data.May[2]}</li>
+          
+          
+          
+          `
+          //we add output as innerhtml something like react library
+          document.getElementById('root').innerHTML=output;
+        })
+      }
     </script>
+    
   </body>
 </html>
