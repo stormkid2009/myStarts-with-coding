@@ -12,7 +12,7 @@ body{
     text-align:center;
     display:grid;
     grid-template-columns: repeat(6,1fr);
-    grid-template-rows: 50px 1fr 50px;
+    grid-template-rows: 100px 1fr 50px;
     grid-gap: 1rem;
     grid-template-areas: 
     "h h h h h h"
@@ -23,6 +23,8 @@ body{
 .header{
     grid-area:h;
     background-color: lightslategray;
+    display:flex;
+    justify-content: flex-end;
 }
 .side-bar{
     grid-area:sb;
@@ -123,4 +125,8 @@ body{
     height:300px;
     padding: 0;
     margin: 10px;
+}
+.logo{
+    flex:1;
+    align-self:flex-start;
 }
