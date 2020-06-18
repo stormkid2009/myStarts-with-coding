@@ -3,7 +3,7 @@ body{
     font-family: verdana ,serif;
 
 }
-.container{
+.main-container{
     height: 1000px;
     width: 100%;
     font-size: 2em;
@@ -20,11 +20,17 @@ body{
     "sb f f f f f"
     ;
 }
-.header{
+.header-container{
+    color:#fff;
+    font-weight: normal;
     grid-area:h;
     background-color: lightslategray;
-    display:flex;
-    justify-content: flex-end;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas: 
+    "lw hw hw nw nw nw"
+
+    
 }
 .side-bar{
     grid-area:sb;
@@ -43,7 +49,7 @@ body{
     background-color: lightslategray;
 }
 @media (width:400px){
-    .container{
+    .main-container{
         grid-template-columns: auto;
         grid-template-rows: auto auto 1fr auto;
         grid-template-areas: 
@@ -126,7 +132,34 @@ body{
     padding: 0;
     margin: 10px;
 }
-.logo{
-    flex:1;
-    align-self:flex-start;
+.logo-wrapper{
+    grid-area:lw;
+}
+#logo-img{
+    height:100px;
+    width:100px;
+}
+#header-wrapper{
+    text-align:center;
+    grid-area:hw;
+
+}
+#nav-wrapper{
+    grid-area:nw;
+    display:grid;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "sh st sc" 
+
+    ;
+
+}
+#span-home{
+    grid-area:sh;
+}
+#span-tours{
+    grid-area:st;
+}
+#span-contact{
+    grid-area:sc;
 }
