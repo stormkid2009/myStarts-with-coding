@@ -1,0 +1,15 @@
+regular expressions in javascript:
+string ="any string items".
+regex=/.../g       g here for global flag.
+string.match(regex)  or   let an array of match.
+regex.test(string)    ===> return true or false.
+
+short hand for letters and numbers(a-z and A-Z and 0-9):
+/\w/ note w here is small case.
+
+short hand for non alplabetical or numerics like white space $ or % ....etc
+/\W/
+short hand for digits or numbers:
+/\d/
+short hand for anything not digits:
+/\D/
