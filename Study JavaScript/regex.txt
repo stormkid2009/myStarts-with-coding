@@ -13,3 +13,18 @@ short hand for digits or numbers:
 /\d/
 short hand for anything not digits:
 /\D/
+
+ab*c  ok b here is zero time or more
+abc or abbbbbbc  or ac is match.
+
+^[0-9]   ^ => means start with a number.
+
+[0-9]$   $ => means end with a numbers.
+
+[a-e] we use the brackets to indicate range from letter a to e here.
+
+e{2} we look for e two times here
+e{2,3} e two times or three
+e{2,} e at least two times maybe 3 or 4 .....etc.
+
+(block of expressions here)
