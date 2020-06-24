@@ -23,8 +23,12 @@ abc or abbbbbbc  or ac is match.
 
 [a-e] we use the brackets to indicate range from letter a to e here.
 
+quantity specifiers:
 e{2} we look for e two times here
 e{2,3} e two times or three
 e{2,} e at least two times maybe 3 or 4 .....etc.
 
 (block of expressions here)
+
+\s => we use it to match white space and tabs.
+\S => we use it to match anything not white space and tabs.
