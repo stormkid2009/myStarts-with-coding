@@ -43,16 +43,21 @@ m =>   for multi lines
 
 testing this code from codewars
 var number=9119;
-var digits = (""+number).split("");
-console.log(digits);
-function toInt(arr){
-  let array=[];
-  for(i=0;i<arr.length;i++){
-    let item=parseInt(arr[i]);
-    item*=item
-    array.push(item);
+const squareDigits = (num) => {
+  
+  let numStr = num.toString();
+  let newNum = " ";
+  
+  for(let i = 0; i < numStr.length; i++){
+    let item=parseInt(numStr[i]);
+    item=(item*item);
+    result=item.toString();
+    newNum +=result;
+    
+  
   }
-  return array;
+  return newNum;
 }
-console.log(toInt(digits));
+squareDigits(number);
+
 
