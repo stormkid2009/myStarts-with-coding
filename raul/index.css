@@ -1,0 +1,23 @@
+#header {
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    text-align: center;
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.sub {
+    color: darkblue;
+    font-size: 18px;
+    margin: 4px;
+}
+
+#footer {
+    text-align: center;
+}

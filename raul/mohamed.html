@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>egy currency calculator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1 id="header">Enter currency numbers</h1>
+    </div>
+    <div class="main">
+
+        <div class="sub">
+            <label for="">5 L.E</label>
+            <input type="text" id="five">
+        </div>
+        <div class="sub">
+            <label for="">10 L.E</label>
+            <input type="text" id="ten">
+        </div>
+        <div class="sub">
+            <label for="">20 L.E</label>
+            <input type="text" id="twenty">
+        </div>
+        <div class="sub">
+            <label for="">50 L.E</label>
+            <input type="text" id="fifty">
+        </div>
+        <div class="sub">
+            <label for="">100 L.E</label>
+            <input type="text" id="oneHundred">
+        </div>
+        <div class="sub">
+            <label for="">200 L.E</label>
+            <input type="text" id="twoHundred">
+        </div>
+
+    </div>
+    <div id="footer"><button id="submit">submit</button></div>
+
+
+
+
+
+
+
+    <script>
+        const header = document.getElementById('header');
+        const five = document.getElementById('five');
+        const ten = document.getElementById('ten');
+        const twenty = document.getElementById('twenty');
+        const fifty = document.getElementById('fifty');
+        const oneHundred = document.getElementById('oneHundred');
+        const twoHundred = document.getElementById('twoHundred');
+        const submit = document.getElementById("submit");
+        let total = [];
+
+
+        five.addEventListener("change", (e) => {
+            e.preventDafault;
+            let result = (five.value) * 5;
+            total.push(result);
+        });
+        ten.addEventListener("change", (e) => {
+            e.preventDafault;
+            let result = (ten.value) * 10;
+            total.push(result);
+        });
+        twenty.addEventListener("change", (e) => {
+            e.preventDafault;
+            let result = (twenty.value) * 20;
+            total.push(result);
+        });
+        fifty.addEventListener("change", (e) => {
+            e.preventDafault;
+            let result = (fifty.value) * 50;
+            total.push(result);
+        });
+        oneHundred.addEventListener("change", (e) => {
+            e.preventDafault;
+            let result = (oneHundred.value) * 100;
+            total.push(result);
+        });
+        twoHundred.addEventListener("change", (e) => {
+            e.preventDafault;
+            let result = (twoHundred.value) * 200;
+            total.push(result);
+        });
+        submit.addEventListener("click", (e) => {
+            let sum = total.reduce((a, b) => a + b, 0);
+            five.value = "";
+            ten.value = "";
+            twenty.value = "";
+            fifty.value = "";
+            oneHundred.value = "";
+            twoHundred.value = "";
+            total = [];
+            alert(sum);
+        });
+    </script>
+</body>
+
+</html>
