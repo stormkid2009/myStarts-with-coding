@@ -40,7 +40,9 @@
         </div>
 
     </div>
-    <div id="footer"><button id="submit">submit</button></div>
+    <div id="footer">
+        <button id="refresh">Refresh</button>
+        <button id="submit">submit</button></div>
 
 
 
@@ -49,58 +51,75 @@
 
 
     <script>
-        const header = document.getElementById('header');
-        const five = document.getElementById('five');
-        const ten = document.getElementById('ten');
-        const twenty = document.getElementById('twenty');
-        const fifty = document.getElementById('fifty');
-        const oneHundred = document.getElementById('oneHundred');
-        const twoHundred = document.getElementById('twoHundred');
-        const submit = document.getElementById("submit");
-        let total = [];
+        const header=document.getElementById('header');
+const five=document.getElementById('five');
+const ten=document.getElementById('ten');
+const twenty=document.getElementById('twenty');
+const fifty=document.getElementById('fifty');
+const oneHundred=document.getElementById('oneHundred');
+const twoHundred=document.getElementById('twoHundred');
+const refresh=document.getElementById("refresh");
+const submit=document.getElementById("submit");
+let getFive=0;
+let getTen=0;
+let getTwenty=0;
+let getFifty=0;
+let getOneHundred=0;
+let getTwoHundred=0;
 
 
-        five.addEventListener("change", (e) => {
-            e.preventDafault;
-            let result = (five.value) * 5;
-            total.push(result);
-        });
-        ten.addEventListener("change", (e) => {
-            e.preventDafault;
-            let result = (ten.value) * 10;
-            total.push(result);
-        });
-        twenty.addEventListener("change", (e) => {
-            e.preventDafault;
-            let result = (twenty.value) * 20;
-            total.push(result);
-        });
-        fifty.addEventListener("change", (e) => {
-            e.preventDafault;
-            let result = (fifty.value) * 50;
-            total.push(result);
-        });
-        oneHundred.addEventListener("change", (e) => {
-            e.preventDafault;
-            let result = (oneHundred.value) * 100;
-            total.push(result);
-        });
-        twoHundred.addEventListener("change", (e) => {
-            e.preventDafault;
-            let result = (twoHundred.value) * 200;
-            total.push(result);
-        });
-        submit.addEventListener("click", (e) => {
-            let sum = total.reduce((a, b) => a + b, 0);
-            five.value = "";
-            ten.value = "";
-            twenty.value = "";
-            fifty.value = "";
-            oneHundred.value = "";
-            twoHundred.value = "";
-            total = [];
-            alert(sum);
-        });
+five.addEventListener("change",(e)=>{
+  e.preventDafault;
+  getFive=(five.value)*5;
+  
+});
+ten.addEventListener("change",(e)=>{
+  e.preventDafault;
+  getTen=(ten.value)*10;
+  
+});
+twenty.addEventListener("change",(e)=>{
+  e.preventDafault;
+  getTwenty=(twenty.value)*20;
+  
+});
+fifty.addEventListener("change",(e)=>{
+  e.preventDafault;
+  getFifty=(fifty.value)*50;
+  
+});
+oneHundred.addEventListener("change",(e)=>{
+  e.preventDafault;
+  getOneHundred=(oneHundred.value)*100;
+  
+});
+twoHundred.addEventListener("change",(e)=>{
+  e.preventDafault;
+  getTwoHundred=(twoHundred.value)*200;
+  
+});
+submit.addEventListener("click",(e)=>{
+  let sum=(getFive+getTen+getTwenty+getFifty+getOneHundred+getTwoHundred);
+  alert(sum);
+  five.value=0;
+  ten.value=0;
+  twenty.value=0;
+  fifty.value=0;
+  oneHundred.value=0;
+  twoHundred.value=0;
+});
+refresh.addEventListener("click",(e)=>{
+  getFive=0;
+  getTen=0;
+  getTwenty=0;
+  getFifty=0;
+  getOneHundred=0;
+  getTwoHundred=0;
+  
+});
+
+
+
     </script>
 </body>
 
